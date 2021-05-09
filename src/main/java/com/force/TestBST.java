@@ -1,10 +1,12 @@
+package com.force;
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 // 测试类
 public class TestBST {
     public static void main(String[] args) {
-        BST<String, Integer> bst = new BST<>();
+        BST<String, Integer> bst = new BST<String, Integer>();
         for (int i = 0; !StdIn.isEmpty(); i++) {
             String key = StdIn.readString();
             bst.put(key, i);

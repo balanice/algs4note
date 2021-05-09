@@ -1,3 +1,5 @@
+package com.force;
+
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -189,7 +191,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     // 根据范围查找所有的 Key
     public Iterable<Key> keys(Key lo, Key hi) {
-        Queue<Key> queue = new Queue<>();
+        Queue<Key> queue = new Queue<Key>();
         keys(root, queue, lo, hi);
         return queue;
     }
